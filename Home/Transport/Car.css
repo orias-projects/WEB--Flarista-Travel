@@ -1,0 +1,602 @@
+:root{
+    --p-anh-font-size:5vw;
+    --h5-font-size:1.5rem;
+    --color-main:#DD8834;
+    --color-black:rgb(27, 26, 26);
+    --h3-h4-font-size:2.3rem;
+    --color-main-sp:#e6790c;
+    --h2-font-size:2.3rem;
+    --h5-font-size:1.2rem;
+}
+/*phần ảnh đầu*/
+body{
+    font-size:1vw;
+}
+
+/*phần book*/
+#book{
+    width:100%;
+    height:auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+#book .book{
+    padding:2rem;
+    box-sizing: border-box;
+    margin:3rem;
+    width:70%;
+    height:100%;
+    background-color: white;
+    border-radius: 1rem;
+    filter: drop-shadow(0px 0px 10px #2e2e2e49);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#book .book .booking{
+    width:85%;
+    height:90%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+}
+#book .book .booking h5{
+    font-size:var(--h5-font-size);
+}
+#book .book .booking .dong{
+    width:100%;
+    margin-bottom:1rem;
+    position: relative;
+}
+#book .book .booking .dong .child{
+    display:flex;
+    width:100%;
+    justify-content: center;
+}
+#book .book .booking .dong .child input{
+    height:2rem;
+    font-size:1rem;
+    border-radius: 0.5rem;
+    border:1px var(--color-black) solid;
+    padding: 0.5rem 1rem 0.5rem 2rem;
+}
+/*dòng book1*/
+#book .book .booking .dong1{
+    display:flex;
+    justify-content: center;
+}
+#book .book .booking .dong1 label{
+    padding:1rem 2rem;
+    margin:1rem 1rem 0.5rem 1rem;
+    color:var(--color-main);
+    border:0.5px rgb(27, 26, 26) solid;
+    border-radius: 1rem;
+    font-weight: 800;
+}
+#book .book .booking .dong1 label .custom-radio{
+    font-size:1rem;
+}
+#book .book .booking .dong1 label input {
+    display: none;
+}
+/*#book .book .booking .dong1 label:hover{
+    background-color:var(--color-main-sp);
+    color:white;
+    border:none;
+}
+#book .book .booking .dong1 label .custom-radio{
+    width:100%;
+    height:100%;
+    display:inline-block;
+}
+#book .book .booking .dong1 label:active{
+    background-color:#c06f18;
+}*/
+
+
+/*dòng 2 book*/
+#book .book .booking .dong2,.dong3,.dong4, h5{
+    font-weight: 700;
+    margin-bottom:1rem;
+}
+#book .book .booking .dong2 .child {
+    position:relative;
+}
+#book .book .booking .dong2 .child input{
+    width: 100%;
+    padding-left:2.8rem;
+}
+#book .book .booking .dong2 .child i{
+    position: absolute;
+    left: 1rem;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:1.3rem;
+}
+/*dòng 3 book*/
+#book .book .booking .dong3 {
+    display:flex; 
+}
+#book .book .booking .dong3 h5{
+    margin-bottom:1rem;
+}
+#book .book .booking .dong3 .dad{
+    flex-basis: 70%;
+    position:relative;
+}
+#book .book .booking .dong3 .dad input{
+    padding-left:2.8rem;
+}
+#book .book .booking .dong3 .dad i{
+    position:absolute;
+    left: 1rem;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:1.3rem;
+}
+#book .book .booking .dong3 .dad .child{
+    position:relative;
+}
+#book .book .booking .dong3 .dad input{
+    width:100%;
+    margin-right:2rem;
+}
+#book .book .booking .dong3 .mom{
+    flex-basis: 30%;
+    position:relative;
+}
+#book .book .booking .dong3 .mom .child{
+    position:relative;
+}
+#book .book .booking .dong3 .mom .child input{
+    padding-left: 2.8rem;
+}
+#book .book .booking .dong3 .mom i{
+    position:absolute;
+    left: 1rem;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:1.3rem;
+}
+#book .book .booking .dong3 .mom input{
+    width:100%;
+}
+/*book dòng 4*/
+#book .book .booking .dong4 {
+    display:flex;
+}
+#book .book .booking .dong4 h4{
+    margin-top:1rem;
+}
+#book .book .booking .dong4 .dad{
+    flex-basis: 70%;
+    position:relative;
+}
+#book .book .booking .dong4 .dad .child{
+    position:relative;
+}
+#book .book .booking .dong4 .dad i{
+    position:absolute;
+    left: 1rem;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:1.3rem;
+}
+#book .book .booking .dong4 .dad input{
+    width:100%;
+    margin-right:2rem;
+    padding-left:2.8rem;
+}
+#book .book .booking .dong4 .mom{
+    flex-basis: 30%;
+    position:relative;
+}
+#book .book .booking .dong4 .mom .child{
+    position:relative;
+}
+#book .book .booking .dong4 .mom i{
+    position:absolute;
+    left: 1rem;
+    top:50%;
+    transform: translateY(-50%);
+    font-size:1.3rem;
+}
+#book .book .booking .dong4 .mom input{
+    width:100%;
+    padding-left:2.8rem;
+}
+/*book dòng 5*/
+#book .book .booking .dong5 button{
+    display: block;
+    width: 10rem;
+    height: 4rem;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: var(--color-main);
+    color: white;
+}
+#book .book .booking .dong5 .child:hover button{
+    background-color:var(--color-main-sp);
+}
+#book .book .booking .dong5 .child:active button{
+    background-color:#c06f18;
+}
+/*phần partners*/
+#partners{
+    height:auto;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:5rem;
+    margin-bottom:5rem;
+} 
+#partners .partners{
+    height:100%;
+    width:70%;
+    display:flex;
+    align-items: center;
+    position:relative;
+}
+/*partners nội dung*/
+#partners .partners .text{
+    flex-basis: 50%;
+}
+#partners .partners .text h3{
+    color:var(--color-main);
+    font-size: var(--h3-h4-font-size);
+    margin: 1rem;
+    font-weight: 800;
+}
+#partners .partners .text h4{
+    font-size: var(--h3-h4-font-size);
+    font-weight: 700;
+    margin:1rem;
+}
+#partners .partners .text p{
+    font-size:1.5rem;
+    margin:1rem;
+}
+#partners .partners .brand{
+    display:flex;
+    justify-content: space-evenly;
+    flex-basis: 50%;
+}
+#partners .partners .brand img{
+    height:8rem;
+    background-size:contain;
+}
+
+/*phần hướng dẫn*/
+
+.why {
+    flex-grow: 1;
+    width: 80%;
+    margin-left:auto;
+    margin-right:auto;
+    height: auto;
+    margin-bottom:5rem;
+}
+.car-rental {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+}
+.with-driver {
+    width: 100%;
+    height: auto;
+    flex-grow: 1;
+}
+/*phần hướng dẫn why*/
+.why .text{
+    display:flex;
+    justify-content: center;
+    margin-top:5rem;
+}
+.why .text h2{
+    color:var(--color-main);
+    font-size: var(--h2-font-size);
+}
+.why .content{
+    display:flex;
+    justify-content: space-around;
+    margin-top:3rem;
+}
+.why .content .dad img{
+    height:6rem;
+    background-size: contain;
+}
+.why .content .dad{
+    display:flex;
+    flex-basis: 50%;
+}
+.why .content .dad .child{
+    display:flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right:auto;
+    width:70%;
+    height:100%;
+}
+.why .content .dad h5{
+    font-size: var(--h5-font-size);
+    color:var(--color-main);
+    text-transform: uppercase;
+    text-align: center;
+    line-height:1.3;
+    padding:1rem 0px;
+}
+.why .content .dad p{
+    font-size:1.3rem;
+    text-align: center;
+    line-height:1.2;
+    font-weight: 500;
+}
+/*hướng dẫn Car rental*/
+.car-rental {
+    display:flex;
+    justify-content: center;
+    margin:2rem;
+}
+.car-rental .dad{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.car-rental .dad h2{
+    color:var(--color-main);
+    font-size:var(--h2-font-size);
+    margin:1rem;
+}
+.car-rental .dad p{
+    font-size:1.5rem;
+    text-align: center;
+    line-height:1.2;
+    font-weight: 500;
+    margin:0.8rem;
+}
+/*hướng dẫn with driver*/
+.with-driver {
+    display:flex;
+    justify-content: center;
+    margin:2rem;
+}
+.with-driver .dad{
+    width:80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.with-driver .dad h2{
+    color:var(--color-main);
+    font-size:var(--h2-font-size);
+    margin:1rem;
+}
+.with-driver .dad p{
+    font-size:1.5rem;
+    text-align: center;
+    line-height:1.2;
+    font-weight: 500;
+    margin:0.8rem;
+}
+
+/*phần general*/
+.general{
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    height:100%;
+    margin-bottom:3rem;
+}
+/*phần general table h2*/
+.general .h2 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.general .h2 h2{
+    font-size: var(--h2-font-size);
+    color:var(--color-main);
+    margin:3rem;
+}
+/*phần general table*/
+.general .table{
+    display:flex;
+    justify-content: space-between;
+}
+.general .table table{
+    border:1px solid black;
+    flex-basis: 48%;
+}
+.general .table table thead{
+    border:1px solid black;
+}
+.general .table table thead tr th{
+    padding:1.5rem;
+    font-size:1.5rem;
+}
+.general .table table tbody tr td {
+    padding:1rem;
+}
+.general .table tbody tr td p{
+    font-weight: 600;
+    font-size:1rem;
+}
+.general .table table tbody tr td  ul{
+    margin:1rem;
+}
+.general .table table tbody tr td  ul li{
+    font-size:1rem;
+    position:relative;
+    margin:0.5rem 1rem;
+    list-style-type: disc;
+}
+
+.general .table tbody tr td .note{
+    font-style: italic;
+    font-weight:300;
+    font-size:1rem;
+}
+.general .table tbody tr td .information{
+    font-weight:400;
+    font-size:1rem;
+}
+/*thanh hr*/
+hr{
+    margin:0px;
+    background-color:var(--color-main);
+    border:none;
+    width:80%;
+    text-align: center;
+    height:1.5px;
+    margin-top:2rem;
+    margin-bottom:0px;
+    margin-left:auto;
+    margin-right: auto;
+}
+/*phần popular*/
+.popular{
+    width:100%;
+    height:100%;
+    text-align: center;
+    margin-top:3rem;
+    margin-bottom:3rem;
+}
+/*popular text*/
+.popular .text{
+    width:100%;
+    height:auto;
+    margin-bottom:2rem;
+}
+.popular .text h2{
+    color:var(--color-main);
+    font-size:var(--h2-font-size);
+    text-align:center;
+}
+/*popular img*/
+.popular .img {
+    width:100%;
+}
+.popular .img .dong{
+    text-align: center;
+}
+.popular .img .dong img{
+    height:12rem;
+    background-size:contain;
+    margin:10px;
+}
+
+@media only screen and (max-width: 740px)/*web mobile*/{
+    #book .book{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    #book .book .booking h5 {
+        font-size:3rem;
+    }
+    #book .book .booking .dong2, .dong3, .dong4{
+        height:calc(100% / 4);
+    }
+    #book .book .booking .dong1 label{
+        padding:0.8rem;
+    }
+    #book .book .booking .dong .child input {
+        height:8rem;
+        padding-left:5rem;
+        font-size:2.5rem;
+    }
+    #book .book .booking .dong .dad i{
+        font-size:3rem;
+        top:45%;
+    }
+    #book .book .booking .dong3{
+        width:100%;
+        display:block;
+    }
+    #book .book .booking .dong3 .dad input{
+        margin:0px;
+    }
+    #book .book .booking .dong3 .mom{
+        display:none;
+    }
+    #book .book .booking .dong3 .dad{
+        width:100%;
+    }
+    #book .book .booking .dong4{
+        width:100%;
+        display:block;
+    }
+    #book .book .booking .dong4 .dad input{
+        margin:0px;
+    }
+    #book .book .booking .dong4 .mom{
+        display:none;
+    }
+    #book .book .booking .dong5 button{
+        width:30rem;
+        height:5rem;
+        font-size:2rem;
+    }
+    #partners{
+        display:none;
+    }
+    .why{
+        display:none;
+    }
+    .car-rental{
+        width:80%;
+        height:auto;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .car-rental .dad{
+        display:grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr;
+    }
+    .car-rental .dad h2{
+        font-size: 5rem;
+    }
+    .car-rental .dad p{
+        font-size:1.8rem;
+        text-align: justify;
+    }
+    .car-rental .dad p:nth-of-type(2){
+        display:none;
+    }
+    .with-driver{
+        width:80%;
+        height:auto;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    .with-driver .dad{
+        display:grid;
+        grid-template-columns: 2fr 3fr;
+        grid-template-rows: 1fr;
+    }
+    .with-driver .dad h2{
+        font-size: 5rem;;
+    }
+    .with-driver .dad p{
+        font-size:1.8rem;
+        text-align: justify;
+    }
+    .with-driver .dad p:nth-of-type(2){
+        display:none;
+    }
+    .general{
+        display:none;
+    }
+    #book .book .booking .dong1 label .custom-radio {
+        font-size:1.8rem;
+    }
+   
+}

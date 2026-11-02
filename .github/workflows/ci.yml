@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [main, dev]
+  pull_request:
+    branches: [main, dev]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Required files
+        run: |
+          test -f README.md
+          test -f LICENSE
+          test -f .github/workflows/ci.yml
+
+      - name: Secret gate
+        id: secrets
+        run: |
+          missing=0
+          if [ -f .env.example ] && [ ! -f .env ]; then
+            echo "::warning::Missing .env (only .env.example present) — secret-dependent steps will be skipped"
+            missing=1
+          fi
+          if [ -f .env ] && grep -Eiq 'CHANGE_ME|your_|TODO_SECRET|replace_me|xxx' .env; then
+            echo "::warning::Placeholder secrets detected in .env — secret-dependent steps will be skipped"
+            missing=1
+          fi
+          echo "missing=$missing" >> "$GITHUB_OUTPUT"
+
+      - name: Structure
+        run: |
+          echo "Tracked layout OK"
+          find . -maxdepth 2 -type f | wc -l
