@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/all.css">
+    <link rel="stylesheet" href="../../General/reset.css">
+    <link rel="stylesheet" href="../../General/Navbar/Navbar.css">
+    <link rel="stylesheet" href="../../General/Footer/Footer.css">
+    <link rel="stylesheet" href="Region.css">
+    <title>Flarista</title>
+</head>
+
+<body>
+    <div id="navigationbar"></div>
+    <div id="body">
+        <div class="pagebanner bannersmall">
+            <img src="North-main.png" alt="anh">
+            <div class="pagetitle">Central Highlands </div>
+        </div>
+        <div class="regionhead contentzone">
+            <h2 class="title orange">DISCOVER CENTRAL HIGHLANDS</h2>
+            <p>
+                The Central Highlands, is a captivating region in Vietnam known for its rugged landscapes, diverse
+                ethnic cultures, and rich natural resources. Characterized by its rolling plateaus, vast coffee
+                plantations, and majestic waterfalls, this region offers a unique blend of natural beauty and cultural
+                heritage. Visitors can explore vibrant local markets, traditional villages, and scenic lakes, such as
+                Lake Tuyen Lam and Lake Bien Ho. The Central Highlands is also renowned for its cool climate and
+                adventurous outdoor activities, making it a must-visit destination for nature lovers and cultural
+                enthusiasts alike.
+            </p>
+        </div>
+        <hr>
+        <div class="snapshots contentzone">
+            <h2 class="title orange">SNAPSHOTS OF CENTRAL HIGHLANDS</h2>
+            <p>The Central Highlands, or Tay Nguyen, is a stunning region with rolling hills, coffee plantations, and
+                majestic waterfalls like Datanla. Its cool climate, ethnic villages, and vibrant festivals showcase rich
+                cultural traditions, making it ideal for nature lovers seeking a peaceful escape.</p>
+        </div>
+        <div class="slideshow">
+            <div class="slideback"><img src="HIGHLAND-SLIDESHOW-MAIN.png" alt=""></div>
+            <div class="slidecontrol" id="slidecontrolprev">
+                <i class="fa-solid fa-circle-chevron-left"></i>
+            </div>
+            <div class="slidecontrol" id="slidecontrolnext">
+                <i class="fa-solid fa-circle-chevron-right"></i>
+            </div>
+            <div class="slidecurrent">
+                <div id="slidecurrent1"><i class="fa-solid fa-circle"></i></div>
+                <div id="slidecurrent2"><i class="fa-regular fa-circle"></i></div>
+                <div id="slidecurrent3"><i class="fa-regular fa-circle"></i></div>
+                <div id="slidecurrent4"><i class="fa-regular fa-circle"></i></div>
+                <div id="slidecurrent5"><i class="fa-regular fa-circle"></i></div>
+            </div>
+            <div class="slidecontent">
+                <div onclick="loadDaLat()" class="slideimg" id="slideimg1">
+                    <img src="Highland1.png" alt="">
+                </div>
+                <div onclick="loadKonTum()" class="slideimg" id="slideimg2">
+                    <img src="Highland2.png" alt="">
+                </div>
+                <div onclick="loadBuonMaThuot()" class="slideimg" id="slideimg3">
+                    <img src="Highland3.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="food">
+            <hr>
+            <div class="foodhead contentzone">
+                <div class="title orange">TASTE OF CENTRAL HIGHLANDS</div>
+                <p>Central Highlands cuisine blends fresh, local ingredients into hearty dishes like grilled meats,
+                    stews, and rice.
+                    Specialties include “com lam” (bamboo-cooked rice) and “bo nuong la lot” (grilled beef in betel
+                    leaves), offering a taste of the region's rich culinary traditions.k</p>
+            </div>
+            <div class="foodmenu contentzone">
+                <div class="menuleft">
+                    <div class="foodconfig">
+                        <div class="title orange">Com Lam</div>
+                        <p>
+                            Com lam is a traditional dish from Vietnam's Central Highlands, known for its unique
+                            preparation and distinct flavor. This specialty involves cooking rice inside bamboo tubes
+                            over an open fire, which imparts a subtle, smoky aroma to the rice. The result is a
+                            fragrant, slightly nutty-flavored rice that pairs wonderfully with grilled meats, stews, or
+                            pickled vegetables. Com lam reflects the region’s resourceful cooking techniques and is a
+                            cherished part of Central Highlands cuisine.
+                        </p>
+                    </div>
+                    <div class="foodimg"><img src="ComLam.png" alt=""></div>
+                </div>
+                <div class="menuright">
+                    <div class="foodimg"><img src="PhoKhoGL.png" alt=""></div>
+                    <div class="foodconfig">
+                        <div class="title orange">Pho Kho Gia Lai</div>
+                        <p>
+                            Pho Kho Gia Lai is a unique and beloved dish from the Central Highlands of Vietnam,
+                            specifically Gia Lai Province. Unlike traditional pho, this dry noodle dish features rice
+                            noodles served without broth, accompanied by a savory mix of tender beef, crispy fried
+                            shallots, fresh herbs, and a flavorful sauce. The dish is often enjoyed with pickled
+                            vegetables and fresh chili, offering a delightful combination of textures and flavors. Pho
+                            Kho Gia Lai is a testament to the region’s rich culinary heritage and is a must-try for
+                            those exploring the food of Tay Nguyen.
+                        </p>
+                    </div>
+                </div>
+                <div class="menuleft">
+                    <div class="foodconfig">
+                        <div class="title orange">Grilled Chicken</div>
+                        <p>
+                            Grilled Chicken is a renowned specialty of the Central Highlands, celebrated for its
+                            distinctive flavor and preparation. This dish features tender chicken marinated in a blend
+                            of local spices and herbs, then grilled to perfection over an open flame. The result is a
+                            deliciously smoky and savory chicken with a crispy exterior and juicy interior.
+                            Traditionally served with a variety of fresh vegetables and dipping sauces, Grilled Chicken
+                            is a beloved culinary delight that captures the essence of Central Highlands cuisine.
+                        </p>
+                    </div>
+                    <div class="foodimg"><img src="GaGrilled.png" alt=""></div>
+                </div>
+                <div class="menuright">
+                    <div class="foodimg"><img src="CutChonCoffee.png" alt=""></div>
+                    <div class="foodconfig">
+                        <div class="title orange">Civet Coffee</div>
+                        <p>
+                            Civet coffee, known as “ca phe chon” in Vietnamese, is a unique and highly sought-after
+                            coffee variety from the Central Highlands. This specialty coffee is made using beans that
+                            have been eaten and then excreted by civet cats. The digestive enzymes of the civet enhance
+                            the coffee’s flavor, resulting in a smooth, rich, and less acidic brew. With its distinctive
+                            production process and refined taste, civet coffee is considered a luxury item and a
+                            fascinating part of the Central Highlands' coffee culture.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="servicezone contentzone">
+                <div class="title orange">EXCURSIONS IN CENTRAL HIGHLANDS </div>
+                <div class="servicecosts">
+                    <div class="servicecost">
+                        <img src="CostGreenHill.png" alt="">
+                        <div class="serviceinfo">
+                            <h2 class="tourname">DA LAT - DA LAT LANG BIANG - GREEN HILL</h2>
+                            <div class="tourinfo">
+                                <div class="tourdate"><i class="fa-sharp-duotone fa-solid fa-timer"></i>
+                                    <span>4 days</span>
+                                </div>
+                                <div class="available"><i class="fa-sharp-duotone fa-solid fa-calendar-days"></i>
+                                    <span>Availability : Every day</span>
+                                </div>
+                                <div class="people"><i class="fa-duotone fa-solid fa-user"></i>
+                                    <span>1 people</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="costzone">
+                            <div class="textfrom">FROM</div>
+                            <div class="cost">6.950.000</div>
+                            <div class="cost">VND</div>
+                            <div class="rate">
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="reviewnum">( 19 Reviews )</div>
+                            <a href="https://arisu171.github.io/Project/Home/TourList/TourList2.html"
+                                class="detailbutt">VIEW DETAIL</a>
+                        </div>
+                    </div>
+                    <div class="servicecost">
+                        <img src="CostMangDen.png" alt="">
+                        <div class="serviceinfo">
+                            <h2 class="tourname">KON TUM - BUON MA THUOT - BUON DON - PLEIKU - KONTUM - MANG DEN</h2>
+                            <div class="tourinfo">
+                                <div class="tourdate"><i class="fa-sharp-duotone fa-solid fa-timer"></i>
+                                    <span>4 days</span>
+                                </div>
+                                <div class="available"><i class="fa-sharp-duotone fa-solid fa-calendar-days"></i>
+                                    <span>Availability : Every day</span>
+                                </div>
+                                <div class="people"><i class="fa-duotone fa-solid fa-user"></i>
+                                    <span>1 people</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="costzone">
+                            <div class="textfrom">FROM</div>
+                            <div class="cost">3.300.000</div>
+                            <div class="cost">VND</div>
+                            <div class="rate">
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                                <i class="fa-sharp fa-solid fa-star" style="color: #ffc800;"></i>
+                            </div>
+                            <div class="reviewnum">( 19 Reviews )</div>
+                            <a href="https://arisu171.github.io/Project/Home/TourList/TourList2.html"
+                                class="detailbutt">VIEW DETAIL</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="servicenote">
+                    <div class="whybook">
+                        <div class="reasonhead">Why Book With Us?</div>
+                        <div class="reason1">No-hassle best price guarantee</div>
+                        <div class="reason">Customer care available 24/7</div>
+                        <div class="reason">Hand-picked Tours & Activities</div>
+                        <div class="reason">Free Travel Insureance</div>
+                    </div>
+                    <div class="bookquest">
+                        <div class="getquest">Get a Question?</div>
+                        <div class="questxt">Do not hesitage to give us a call. We are an expert team and we are happy
+                            to talk to you.</div>
+                        <div class="qinfo">+84 6868 888</div>
+                        <div class="qinfo">FlaristaTravel@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="pagefooter"></footer>
+    <script src="../../General/Footer/Footer.js"></script>
+    <script src="../../General/Navbar/Navbar.js"></script><!--link của nav-->
+    <script src="Region.js"></script>
+</body>
+
+</html>
