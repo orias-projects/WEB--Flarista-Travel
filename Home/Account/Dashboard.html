@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/all.css">
+    <link rel="stylesheet" href="../../General/reset.css">
+    <link rel="stylesheet" href="../../General/Navbar/Navbar.css">
+    <link rel="stylesheet" href="../../General/Footer/Footer.css">
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="Register.css">
+    <title>Flarista</title>
+</head>
+
+<body>
+    <div id="navigationbar"></div><!--link của nav-->
+    <div id="body">
+        <div class="pagebanner bannersmall">
+            <img src="Dashboardbanner.png" alt="">
+            <div class="pagetitle">CUSTOMER - DASHBOARD</div>
+        </div>
+        <div class="dashboardcontent">
+            <div class="dash-menu">
+                <div class="account">
+                    <h2>MY ACCOUNT</h2>
+                    <a onclick="loadPreviousContent() "><i class="fa-light fa-address-card"></i>Profile</a>
+                    <a onclick="loadDash('Change-pass.html')"><i class="fa-light fa-lock"></i>Change Password</a>
+                </div>
+                <div class="tour-booking">
+                    <h2>TOUR BOOKING</h2>
+                    <a><i class="fa-sharp fa-light fa-clipboard-list"></i>My Booking</a>
+                    <a><i class="fa-sharp fa-light fa-file-invoice-dollar"></i>Invoces</a>
+                    <a><i class="fa-sharp fa-solid fa-star-sharp"></i>Reviews</a>
+                    <a><i class="fa-light fa-heart"></i>Wish List</a>
+                </div>
+                <div class="sign-out">
+                    <hr>
+                    <a><i class="fa-solid fa-lock"></i></i></a>
+                    <hr>
+                </div>
+                <div class="need-help">
+                    <h2>NEED HELP</h2>
+                    <p class="icon-phone"><i class="fa-solid fa-phone"></i> 012.345.6789</p>
+                    <p class="email">support@flarista.com</p>
+                </div>
+            </div>
+            <div class="dash-content">
+                <div class="my-profile">
+                    <div class="profile-card">
+                        <div class="profile-header">
+                            <h3>My Profile</h3>
+                            <button class="edit-btn"  onclick="toggleEdit()">Edit Profile</button>
+                        </div>
+                        <div class="profile-info">
+                            <div class="profile-photo">
+                                <img src="human.jpg" alt="Profile Photo">
+                            </div>
+                            <div class="details">
+                                <div class="name">
+                                    <span>Name<i class="fa-light fa-pen"></i></span>
+                                    <input type="text" value="Trần Bảo Ngọc" readonly>
+                                </div>
+                                <div class="gender">
+                                    <span>Gender<i class="fa-light fa-pen"></i></span>
+                                    <input type="text" value="Male" readonly>
+                                </div>
+                                <div class="birth">
+                                    <span>Birth Date<i class="fa-light fa-pen"></i></span>
+                                    <input type="text" value="03/05/2002" readonly>
+                                </div>
+                                <div class="country">
+                                    <span>Country<i class="fa-light fa-pen"></i></span>
+                                    <input type="text" value="VietNam" readonly>
+                                </div>
+                                <div class="email">
+                                    <span>Email<i class="fa-light fa-pen"></i></span>
+                                    <input type="email" value="baongoc@gmail.com" readonly>
+                                </div>
+                                <div class="phone">
+                                    <span>Phone<i class="fa-light fa-pen"></i></span>
+                                    <input type="text" value="0123456789" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="booking-card">
+                    <div class="header">
+                        <h3>Current Booking</h3>
+                        <button class="view-btn">View All Booking</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tour Name</th>
+                                <th>Travel Date</th>
+                                <th>Total</th>
+                                <th>Payment Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HA NOI - CAT BA</td>
+                                <td>23/10/2024</td>
+                                <td>2.000.000</td>
+                                <td>XỬ LÝ</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="review-card">
+                    <div class="header">
+                        <h3>Review</h3>
+                        <button class="view-btn">View All Reviews</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tour Name</th>
+                                <th>Status</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>HA NOI - CAT BA</td>
+                                <td>GOOD</td>
+                            </tr>
+                            <tr>
+                                <td>HA NOI - NINH BINH - HA LONG</td>
+                                <td>GOOD</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="pagefooter"></footer>
+    <script src="../../General/Footer/Footer.js"></script>
+    <script src="../../General/Navbar/Navbar.js"></script><!--link của nav-->
+    <script src="Dashboard.js"></script>
+</body>
+
+</html>
